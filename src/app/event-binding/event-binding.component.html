@@ -1,0 +1,11 @@
+<p>event-binding works!</p>
+<input type="text" size="20" #n1>
+<input type="button" (click)="sayHello(n1)" value="click here">
+<br/>
+<h1>{{msg}}</h1>
+<br/>
+no1: <input type="text" #no1> <br/>
+no2:  <input type="text" #no2> <br/>
+<input type="button" value="sum" (click)="total(no1,no2)">
+<br/>
+<h2>{{sum}}</h2>

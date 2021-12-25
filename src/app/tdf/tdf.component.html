@@ -1,0 +1,10 @@
+<p>tdf works!</p>
+<form #loginRef="ngForm" (ngSubmit)="checkUser(loginRef)">
+  UserName : <input type="text" name="user" ngModel required minlength="2" > <br/>
+  Password : <input type="password" name="password" ngModel required> <br/>
+  <input type="submit" value="login" [disabled]="loginRef.invalid">
+  <input type="reset" value="clear">
+</form>
+<br/>
+ <h2>{{msg}}</h2>
+ <h3>{{loginRef.invalid}}</h3>
