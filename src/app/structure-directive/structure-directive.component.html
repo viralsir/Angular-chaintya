@@ -1,0 +1,13 @@
+<p>structure-directive works!</p>
+<h1 *ngIf="true">this is content which display using if</h1>
+<h1 *ngIf="true">this is content which display using if</h1>
+<h1 *ngIf="f1">this is content which display using if</h1>
+<h1 *ngIf="f2">this is content which display using if</h1>
+
+<input type="button" (click)="toggle()" [value]="msg">
+<h1 *ngIf="flag">this is content which display using button </h1>
+
+<ul>
+  <li *ngFor="let na of names">{{na}}</li>
+</ul>
+
