@@ -1,0 +1,8 @@
+<p>emp-view works!</p>
+<table>
+  <tr><th>Name</th><th>Salary</th></tr>
+  <tr *ngFor="let emp of EmpServ.employees">
+    <td>{{emp.name}}</td>
+    <td>{{emp.salary}}</td>
+  </tr>
+</table>

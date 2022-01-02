@@ -1,0 +1,11 @@
+<p>emp-entry works!</p>
+<form [formGroup]="empformRef" (ngSubmit)="addEmployee()">
+
+  name : <input type="text" name="name" formControlName="name">
+  <br/>
+  salary : <input type="number" formControlName="salary">
+  <br/>
+  <input type="submit" value="add">
+  <input type="reset" value="clear">
+
+</form>

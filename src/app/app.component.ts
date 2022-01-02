@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'chaintya';
   age:number=12;
+
+  entrycomponent:boolean=false;
+  viewcomponent:boolean=false;
+
+  entrybtn(){
+    this.entrycomponent=true;
+    this.viewcomponent=false;
+  }
+  viewbtn(){
+    this.entrycomponent=false;
+    this.viewcomponent=true;
+  }
+
 }
