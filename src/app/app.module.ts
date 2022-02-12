@@ -14,10 +14,12 @@ import { MdfComponent } from './mdf/mdf.component';
 import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 import { EMPENTRYComponent } from './emp-entry/emp-entry.component';
 import { EMPVIEWComponent } from './emp-view/emp-view.component';
+import { StudentEntryComponent } from './student-entry/student-entry.component';
+import { StudentViewComponent } from './student-view/student-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent,child1Component, Child2Component, StringIntropolationComponent, PropertyBindingComponent, EventBindingComponent, TwoDatabindingComponent, TdfComponent, MdfComponent, StructureDirectiveComponent, EMPENTRYComponent, EMPVIEWComponent
+    AppComponent,child1Component, Child2Component, StringIntropolationComponent, PropertyBindingComponent, EventBindingComponent, TwoDatabindingComponent, TdfComponent, MdfComponent, StructureDirectiveComponent, EMPENTRYComponent, EMPVIEWComponent, StudentEntryComponent, StudentViewComponent
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule

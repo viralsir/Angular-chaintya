@@ -1,0 +1,33 @@
+<form [formGroup]="stdentFormRef" (ngSubmit)="onsubmitclick()">
+<table>
+  <tr>
+    <td colspan="2" align="center">Student Entry Form</td>
+  </tr>
+  <tr>
+    <th>Roll No:</th>
+    <th><input type="number" formControlName="rollno"></th>
+  </tr>
+  <tr>
+   <th>Name :</th>
+    <th><input type="text" formControlName="name"></th>
+  </tr>
+  <tr>
+    <th>Maths :</th>
+    <th><input type="number" formControlName="maths"></th>
+  </tr>
+  <tr>
+    <th>Sci :</th>
+    <th><input type="number" formControlName="sci"></th>
+  </tr>
+  <tr>
+    <th>English :</th>
+    <th><input type="number" formControlName="eng"></th>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <input type="submit" value="add" [disabled]="stdentFormRef.invalid">
+      <input type="reset" value="clear">
+    </td>
+  </tr>
+</table>
+</form>

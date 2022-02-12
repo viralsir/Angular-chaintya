@@ -1,0 +1,24 @@
+<p>student-view works!</p>
+<table>
+  <tr>
+    <th>Roll No</th>
+    <th>Name</th>
+    <th>Maths</th>
+    <th>Science</th>
+    <th>English</th>
+    <th>Pass /Fail</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let student of studentservice.student_list">
+    <td>{{student.rollno}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.maths}}</td>
+    <td>{{student.sci}}</td>
+    <td>{{student.eng}}</td>
+    <td *ngIf="student.maths>=35 && student.sci>=35 && student.eng>=35">Pass</td>
+    <td *ngIf="student.maths<35 || student.sci<35 || student.eng<35">Fail</td>
+    <td>
+      update    delete
+    </td>
+  </tr>
+</table>
