@@ -16,13 +16,15 @@ import { EMPENTRYComponent } from './emp-entry/emp-entry.component';
 import { EMPVIEWComponent } from './emp-view/emp-view.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentViewComponent } from './student-view/student-view.component';
+import {HttpClientModule} from "@angular/common/http";
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
-    AppComponent,child1Component, Child2Component, StringIntropolationComponent, PropertyBindingComponent, EventBindingComponent, TwoDatabindingComponent, TdfComponent, MdfComponent, StructureDirectiveComponent, EMPENTRYComponent, EMPVIEWComponent, StudentEntryComponent, StudentViewComponent
+    AppComponent,child1Component, Child2Component, StringIntropolationComponent, PropertyBindingComponent, EventBindingComponent, TwoDatabindingComponent, TdfComponent, MdfComponent, StructureDirectiveComponent, EMPENTRYComponent, EMPVIEWComponent, StudentEntryComponent, StudentViewComponent, TaskComponent
   ],
   imports: [
-    BrowserModule,FormsModule,ReactiveFormsModule
+    BrowserModule,FormsModule,ReactiveFormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
